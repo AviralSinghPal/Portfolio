@@ -7,36 +7,38 @@
 .hero{
 	height: 100vh;
 	width: 100%;
-	background-color: black;
+	background-image: url("img/20220802_123243_0000.png");
+	background-color: #000000;
 	background-size: cover;
 	background-position: center;
 	/* border: 2px solid white; */
 }
-.content img{
-	/* float: right;	 */
+/* .content img{
+	
 	position: relative;
-	left: 700px;
-	top:400px;
+	width: 400px;
+	left: 800px;
+	top:300px;
 	
 
-}
+} */
 .content{
 	/* border: 2px solid white; */
 	position: relative;
-	padding-bottom: 300px ;
+	/* padding-bottom: 300px ; */
 }
 nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 45px;
+	/* padding-top: 45px; */
 	padding-left: 8%;
 	padding-right: 8%;
 }
 .logo{
-	color: white;
-	font-size: 35px;
-	letter-spacing: 1px;
+	padding: none;
+	margin: none;
+	width: 150px;
 	cursor: pointer;
 }
 span{
@@ -193,8 +195,8 @@ button:hover{
 	min-height: 400px;
 }
 .card{
-	height: 365px;
-	width: 335px;
+	height: 600px;
+	width: 350px;
 	padding: 20px 35px;
 	background: #191919;
 	border-radius: 20px;
@@ -232,6 +234,12 @@ h5{
 	border-radius: 30px;
 	transition: .4s; 
 }
+.card img{
+	border-radius: 7%;
+	margin: 25px 0px;
+	height: 200px;
+	object-fit: scale-down;
+	}
 .card .button:hover{
 	background-color: transparent;
 	border: 2px solid #f9004d;
@@ -315,4 +323,9 @@ footer p:nth-child(2){
 	color:#f9004d;
 	bottom: 35px;
 	font-size: 14px; 
+}
+
+.box{
+	/* display: flex; */
+	flex-wrap: wrap;	
 }
