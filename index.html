@@ -6,7 +6,7 @@
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+  <script src="trail.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -18,12 +18,11 @@
 			<img class='logo' src="./img/20220802_123243_0000.png" alt="">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="#" id="about-me-link">About Me</a></li>
+				<li><a href="#" id="project-link">My Projects</a></li>
+				<li><a href="#">Contact Me</a></li>
 			</ul>
-			<a href="#" class="btn">Subscribe</a>
+			<a href="./img/new resume.pdf" class="btn">Download Resume</a>
 		</nav>
 
 		<div class="content">
@@ -41,14 +40,22 @@
 	</div>
 
 	<!----About section start---->
-	<section class="about">
+	<section class="about" id="about-me-section">
 		<div class="main">
 			<img src="img/main-img.png">
-			<div class="about-text">
+			<div class="about-text" >
 				<h2>About Me</h2>
 				<h5>Developer <span>& Designer</span></h5>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque aliquid dicta nobis error ut? Consequuntur ipsam alias magni nulla dolorem repudiandae totam illum explicabo! Quo suscipit totam est? Maiores, libero?</p>
-				<button type="button">Let's Talk</button>
+				<p>Hi there! I'm a Full Stack Developer and proud computer science grad. I'm working at Infosys where I put my skills to the test every day.<br/>
+					 My portfolio speaks for itself and shows off my love for all things web development. So, if you're in need of a website that not only functions well but also puts a smile on your face, I'm your guy!</p>
+					 <button type="button" id="whatsapp-button">Let's Talk</button>
+
+					 <script>
+					   document.getElementById("whatsapp-button").addEventListener("click", function() {
+						 window.open("https://api.whatsapp.com/send?phone=8932030388&text=Hi");
+					   });
+					 </script>
+					 
 			</div>
 		</div>
 	</section>
@@ -57,7 +64,7 @@
 	
 	<!---PROJECTS---->
 
-	<div class="service">
+	<div class="service" id="project-section">
 		<div class="title">
 			<h2>My Projects</h2>
 		</div>
@@ -261,7 +268,9 @@
 	<!------Contact Me------>
 	<div class="contact-me">
 		<p>Let Me Get You A Beautiful Website.</p>
-		<a class="button-two" href="#">Hire Me</a>
+		<a class="button-two" target="_blank" href="https://api.whatsapp.com/send?phone=8932030388&text=Hi!%20I%20just%20checked%20out%20your%20portfolio%20and%20I%27m%20interested%20in%20discussing%20the%20possibility%20of%20hiring%20you.%20Can%20we%20schedule%20a%20chat%3F">Hire Me</a>
+
+
 	</div>
 
 	<!------footer start--------->
@@ -269,11 +278,12 @@
 		<p>Aviral Singh Pal</p>
 		<p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
 		<div class="social">
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/aviral-singh-pal/"><i class="fab fa-linkedin"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-dribbble"></i></a>
+			<a target="_blank" href="https://github.com/AviralSinghPal"><i class="fab fa-github"></i></a>
 		</div>
 		<p class="end">CopyRight By Aviral Singh Pal</p>
 	</footer>
+	<script src="trail.js"></script>
 </body>
 </html>
