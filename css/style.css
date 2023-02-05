@@ -38,12 +38,20 @@ nav{
 	padding-left: 8%;
 	padding-right: 8%;
 }
-.logo{
-	padding: none;
-	margin: none;
+.logo {
+	padding: 0;
+	margin: 0;
 	width: 150px;
 	cursor: pointer;
-}
+	border-radius: 50%;
+	transition: all 1s ease;
+	}
+	
+	.logo:hover {
+	transform: scale(2);
+	border-radius: 0;
+	box-shadow: 0 0 10px #fff;
+	}
 span{
 	color: #f9004d;
 }
@@ -59,6 +67,7 @@ nav ul li a{
 	text-transform: capitalize;
 }
 nav ul li a:hover{
+	
 	color: #f9004d;
 	transition: .4s;
 }
@@ -332,3 +341,17 @@ footer p:nth-child(2){
 	/* display: flex; */
 	flex-wrap: wrap;	
 }
+body::-webkit-scrollbar {
+	width: 0.25em;
+	background-color: #000000;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #f9004d;
+	border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+	background-color: #555555;
+  }
+  

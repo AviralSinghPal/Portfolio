@@ -20,7 +20,7 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#" id="about-me-link">About Me</a></li>
 				<li><a href="#" id="project-link">My Projects</a></li>
-				<li><a href="#">Contact Me</a></li>
+				<li><a href="#" id="contactme-link">Contact Me</a></li>
 			</ul>
 			<a href="./img/new resume.pdf" class="btn">Download Resume</a>
 		</nav>
@@ -31,10 +31,17 @@
 			<h1>Aviral Singh <span>Pal</span></h1>
 			<h3>I'am a Web Developer.</h3>
 			<div class="newslatter">
-				<form>
-					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
-					<input type="submit" name="submit" value="Lets Start">
-				</form>
+				<form >
+					<input type="email" name="email" id="mail" placeholder="Write me a Email">
+					<input type="submit" name="submit" value="Lets Start" onclick="openGmail()">
+				  </form>
+				  
+				  <script>
+				  function openGmail() {
+					const email = document.querySelector('#mail').value;
+					window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=youremail@example.com&su=SUBJECT&body=${email}`, '_blank');
+				  }
+				  </script>
 			</div>
 		</div>
 	</div>
@@ -42,7 +49,7 @@
 	<!----About section start---->
 	<section class="about" id="about-me-section">
 		<div class="main">
-			<img src="img/main-img.png">
+			<img src="img/portfolio1.jpg">
 			<div class="about-text" >
 				<h2>About Me</h2>
 				<h5>Developer <span>& Designer</span></h5>
@@ -266,7 +273,7 @@
 	</div>
 
 	<!------Contact Me------>
-	<div class="contact-me">
+	<div class="contact-me" id="contactme-section">
 		<p>Let Me Get You A Beautiful Website.</p>
 		<a class="button-two" target="_blank" href="https://api.whatsapp.com/send?phone=8932030388&text=Hi!%20I%20just%20checked%20out%20your%20portfolio%20and%20I%27m%20interested%20in%20discussing%20the%20possibility%20of%20hiring%20you.%20Can%20we%20schedule%20a%20chat%3F">Hire Me</a>
 
