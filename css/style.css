@@ -369,6 +369,30 @@ body::-webkit-scrollbar {
 	margin-left: 10px;
   }
 
-  @media screen and (max-width:950px) {
 
+  @media (max-width: 1000px) {
+	.nav-items {
+	  display: none;
+	}
+	.hamburger {
+	  display: block;
+	  color: #000000;
+	  cursor: pointer;
+	}
+	.main{
+		display: flex;
+		flex-direction: column;
+		
+	}
+  }
+  
+  .hamburger {
+	display: none;
+  }
+  
+  .line {
+	width: 25px;
+	height: 2px;
+	background-color: black;
+	margin: 5px;
   }

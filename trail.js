@@ -19,5 +19,14 @@ window.onload = function() {
       event.preventDefault();
       contactSection.scrollIntoView({ behavior: 'smooth' });
     });
-  };
+
+
+    const hamburger = document.querySelector(".hamburger");
+    const navItems = document.querySelector(".nav-items");
+
+    hamburger.addEventListener("click", () => {
+    navItems.classList.toggle("show");
+    });
+
+    };
   
