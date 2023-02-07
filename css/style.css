@@ -4,14 +4,17 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
+body{
+	width: 100vw;
+}
 .hero{
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	/* background-image: url("img/20220802_123243_0000.png"); */
 	/* background-color: #5e5e5e;
 	 */
 	background-image: url('../img/portfolio.jpg');
-	 background-size: cover;
+	background-size: cover;
 	background-position: center;
 	/* border: 2px solid white; */
 }
@@ -145,8 +148,8 @@ h4{
 	width: 550px;
 }
 .main{
-	width: 1130px;
-	max-width: 95%;
+	width: 100%;
+	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -196,7 +199,7 @@ button:hover{
 .title h2{
 	color: white;
 	font-size: 75px;
-	width: 1130px;
+	width: 130px;
 	margin: 30px auto;
 	text-align: center;
 }
@@ -364,4 +367,8 @@ body::-webkit-scrollbar {
   a{
 	color: #f9004d;
 	margin-left: 10px;
+  }
+
+  @media screen and (max-width:950px) {
+
   }
