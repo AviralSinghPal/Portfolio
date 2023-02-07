@@ -21,11 +21,11 @@ window.onload = function() {
     });
 
 
-    const hamburger = document.querySelector(".hamburger");
-    const navItems = document.querySelector(".nav-items");
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector("nav");
 
-    hamburger.addEventListener("click", () => {
-    navItems.classList.toggle("show");
+    burger.addEventListener("click", function () {
+      nav.classList.toggle("nav-open");
     });
 
     };
